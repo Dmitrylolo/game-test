@@ -27,7 +27,8 @@ const styles = {
 		borderWidth: 1,
 		borderColor: 'grey',
 		marginLeft: 5,
-		marginRight: 5
+		marginRight: 5,
+		height: 45
 	}
 };
 
