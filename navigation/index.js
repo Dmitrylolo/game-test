@@ -1,6 +1,6 @@
 import {
-  createBottomTabNavigator,
-  createStackNavigator
+	createBottomTabNavigator,
+	createStackNavigator
 } from 'react-navigation';
 
 import SignInScreen from '../screens/SignInScreen';
@@ -10,21 +10,21 @@ import GameScreen from '../screens/GameScreen';
 import CreateTableScreen from '../screens/CreateTableScreen';
 
 let LobbyNavigation = createStackNavigator({
-  lobby: LobbyScreen,
-  game: GameScreen,
-  gameCreate: CreateTableScreen
+	lobby: LobbyScreen,
+	game: GameScreen,
+	gameCreate: CreateTableScreen
 });
 
 export default createBottomTabNavigator(
-  {
-    signin: SignInScreen,
-    register: RegisterScreen,
-    lobbyNavigation: LobbyNavigation
-  },
-  {
-    navigationOptions: {
-      tabBarVisible: true
-    },
-    lazy: true
-  }
+	{
+		signIn: SignInScreen,
+		signUp: RegisterScreen,
+		lobbyNavigation: LobbyNavigation
+	},
+	{
+		navigationOptions: {
+			tabBarVisible: true
+		},
+		lazy: true
+	}
 );
